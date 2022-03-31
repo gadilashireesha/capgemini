@@ -1,0 +1,64 @@
+3 multiples using for loop
+public class Main{
+    public static void main(String[] args){
+        for (int i=3;i<=36;i++){
+            if(i%3==0){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println( );
+    }
+}
+
+
+even number between 40-60
+public class Main{
+    public static void main(String[] args){
+        for (int i=40;i<=60;i++){
+            if(i%2==0){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println( );
+    }
+}
+
+
+print 10 natural numbers in reverse order
+public class Main{
+    public static void main(String[] args){
+        for (int i=10;i>=1;--i){
+            System.out.print(i+" ");
+        }
+    }
+}
+
+
+
+fibonacci series
+public class Main{
+    public static void main(String[] args){
+        int n1=0,n2=1,n3;
+            System.out.print(n1+" "+n2);
+        for(int i=1;i<=10;i++){
+            n3=n1+n2;
+            System.out.print(" "+n3);
+            n1=n2;
+            n2=n3;
+        }
+    }
+}
+
+
+factorial
+public class Main{
+    public static void main(String[] args){
+        int n1=1;
+            for(int i=1;i<=6;i++){
+            n1=n1*i;
+        }
+        System.out.print(n1);
+    }
+}
+
+
