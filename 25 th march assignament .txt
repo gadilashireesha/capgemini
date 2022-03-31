@@ -1,0 +1,41 @@
+Create a query to display the employee number, first name, last name, phone number and department number (Employees table).
+=>	select employee_id,first_name,last_name,phone_number,department_id from employees;
+
+Create a query to display the unique combination of values in department_id and job_id columns (Employees table).
+=>	select distinct job_id, department_id from employees;
+
+
+Create a query to display the last name concatenated with the first name, separated by space, and the telephone number 
+concatenated with the email address, separated by hyphen. Name the column headings “FULL_NAME” and “CONTACT_DETAILS” 
+respectively (Employees tables).
+=>	SELECT first_name ||' '||last_name AS Full_Name, phone_number ||' - '|| email AS Contact_Details from employees;
+
+
+Create a query to display the first name, last name, hire date, salary, and salary after a raise of 20%. Name the last column (salary after a raise) 
+heading as “ANNUAL_SAL” (Employees table).
+=>	SELECT first_name , last_name , hire_date , salary , salary * 20 AS ANNUAL_SAL FROM employees;
+
+
+Create a query to display the department number, department name, and manager number. Name the last column (manager number) heading 
+as “MNG” (Employees table).
+=>	SELECT department_name , department_id , manager_id AS MNG FROM  emp_details_view;
+
+Display job Title, the difference between minimum and maximum salaries for jobs with max salary in the range 10000
+      to 20000.
+=>	select job_title,(max_salary-min_salary) from jobs 
+	where max_salary between 10000 and 20000.;
+ 
+Display first name and join date of the employees who is either IT Programmer or Sales Man.
+=>	SELECT first_name, last_name, hire_date FROM employees 
+	WHERE job_id in ('IT_PROG','ST_MAN');
+
+Display details of the employees where commission percentage is null and salary in the range 5000 to 10000 and
+      department is 30.
+=>	SELECT * FROM employees where commission_pct is NULL 
+	and salary between 5000 and 10000 and department_id=30;
+
+Display manager ID and number of employees managed by the manager. 
+=>	select manager_id,COUNT(*) from employees GROUP BY manager_id;
+
+Display job ID for jobs with average salary more than 10000. 
+=>	SELECT job_id, AVG(salary) FROM employees GROUP BY job_id HAVING AVG(salary)>10000;
