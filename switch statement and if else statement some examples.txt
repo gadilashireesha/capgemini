@@ -1,0 +1,82 @@
+check number is even or odd
+
+
+
+public class Main{
+    public static void main(String[] args){
+        int i=7;
+        if(i%2==0)
+            System.out.println("even");
+        else
+            System.out.println("odd");
+    }
+}
+
+switch case problem:
+public class Main
+{
+	public static void main(String[] args) {
+	    int var=5;
+	    switch(var){
+	    case 1:
+	        System.out.println("good");
+	        break;
+	    case 2:
+	        System.out.println("better");
+	        break;
+	    case 3:
+	        System.out.println("good");
+	        break;
+	    default:
+	        System.out.println("invalid");
+	        break;
+	    }
+	}
+}
+
+
+given a number leap or not
+
+
+public class Main{
+    public static void main(String[] arg){
+        int i=2007;
+        if(i%400==0 || i%4==0){
+            System.out.println("leap year");
+        }
+        else{
+            System.out.println("not leap year");
+        }    
+    }
+}
+
+
+grading system using switch statement
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int grade=5;
+	    switch(grade){
+	    case 10:
+		case 9:
+		    System.out.println("Grade A");
+		    break;
+		case 8:
+		case 7:
+			System.out.println("Grade B");
+		    break;
+		case 6:
+		    System.out.println("Grade C");
+		    break;
+		case 5:
+		case 4:
+		    System.out.println("Grade D");
+		    break;
+		default:
+			System.out.println("Failed");
+		    
+		}
+	}
+}
