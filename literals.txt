@@ -1,0 +1,48 @@
+examples of literalsliteral
+integer literal
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int i=5;
+		System.out.println(i);
+	}
+}
+
+
+FLOAT LITERAL
+public class Main
+{
+	public static void main(String[] args) {
+	    float i=5.6f;
+		System.out.println(i);
+	}
+}
+
+
+STRING LITERAL
+public class Main
+{
+	public static void main(String[] args) {
+	    String i="hi";
+		System.out.println(i);
+	}
+}
+
+CHAR LITERAL
+public class Main
+{
+	public static void main(String[] args) {
+	    char i='A';
+		System.out.println(i);
+	}
+}
+
+BOOLEAN LITERAL
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    int y = 9;
+    System.out.println(x > y); 
+  }
+}
