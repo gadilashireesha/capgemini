@@ -1,0 +1,36 @@
+operators and assignments
+
+
+operators
+public class Main
+{
+	public static void main(String[] args) {
+	    int i=6;
+	    float f=5.6f;
+		System.out.println(i+f);
+		System.out.println(i-f);
+		System.out.println(i*f);
+		System.out.println(i/f);
+		System.out.println(++i);
+		System.out.println(--i);
+	}
+}
+
+
+
+
+assignments
+public class Main
+{
+	public static void main(String[] args) {
+	    int i=7;
+		System.out.println(i+=2);
+		System.out.println(i-=2);
+		System.out.println(i*=2);
+		System.out.println(i/=2);
+		System.out.println(i&=2);
+		System.out.println(i|=2);
+		System.out.println(i>>=2);
+		System.out.println(i<<=2);
+	}
+}
