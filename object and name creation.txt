@@ -1,0 +1,11 @@
+public class Student{
+    String name="John";
+    int rollno=2;
+    void Student(){
+        System.out.println(name);
+    }
+    public static void main(String[] args){
+        Student obj=new Student();
+        obj.Student();
+    }
+}
