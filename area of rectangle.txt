@@ -1,0 +1,21 @@
+public class Rectangle{
+    int length,breadth,ans;
+    void insert(int l,int b){
+        length=l;breadth=b; 
+    }
+    void Area( ){
+        System.out.println(length*breadth);}
+       
+        
+    
+    
+    
+    public static void main(String[] args){
+        Rectangle obj=new Rectangle();
+        Rectangle obj2=new Rectangle();
+        obj.insert(4,5);
+        obj2.insert(5,8);
+        obj.Area();
+        obj2.Area();
+    }
+}
