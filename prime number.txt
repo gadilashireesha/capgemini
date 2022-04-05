@@ -1,0 +1,21 @@
+check the number primr or not
+
+public class Hello{
+	public static void main(String[] args) {
+		//Scanner sc=new Scanner(Systen.in);
+		int n=24;
+		boolean isprime=true;
+		for(int i=2;i<n;i++) {
+			if(n%i==0) {
+				isprime=false;
+				break;		
+			}
+		}
+		if(isprime) {
+			System.out.println("prime");
+		}
+		else {
+			System.out.println(" not prime");
+		}
+	}
+}
